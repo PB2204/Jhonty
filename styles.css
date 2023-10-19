@@ -1,0 +1,215 @@
+/* Global Styles */
+body {
+    /* background-color: #64bff3; */
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-image: linear-gradient(90deg, rgba(59, 139, 199, 1) 22%, rgba(40, 190, 208, 1) 47%, rgba(0, 212, 255, 1) 100%) !important;
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.logo>img {
+    height: 60px;
+    width: 60px;
+}
+
+.navbar-toggler-icon {
+    background-color: #1499e1;
+}
+
+.navbar-nav {
+    margin-top: 5px;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Introduction Section Styles */
+
+.display-4 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Project Section Styles */
+.card {
+    border: none;
+}
+
+.card-img-top {
+    max-height: 200px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+}
+
+/* Contact Section Styles */
+.container {
+    margin-top: 20px;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .jumbotron {
+        padding: 100px 0;
+    }
+
+    .display-4 {
+        font-size: 28px;
+    }
+
+    .lead {
+        font-size: 16px;
+    }
+
+    .vdo {
+        height: 68%;
+    }
+}
+
+body {
+    margin: 0;
+    /* overflow: hidden; */
+
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    /* Add a semi-transparent overlay */
+}
+
+/* Glassmorphism effect for the photo */
+.glassmorphism {
+    background-color: transparent;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgb(68, 68, 79);
+    margin: 0 auto;
+    position: relative; /* Change this to relative */
+    z-index: 2; /* Change this to 2 to bring it above the video */
+}
+
+/* Additional styling for your photo */
+.glassmorphism img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Button styling */
+.whatsapp-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #29d869;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 5px;
+    position: relative; /* Change this to relative */
+    z-index: 2; /* Change this to 2 to bring it above the video */
+}
+
+.whatsapp-button:hover {
+    background-color: #18ad9b;
+}
+
+/* WhatsApp logo styling */
+.whatsapp-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Apply these styles to the .vdo (video) class */
+.vdo {
+    position: absolute; /* Change this to absolute */
+    z-index: 0;
+    width: 100%;
+    top: 85px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    /* height: 100%; */
+}
+
+/* Apply these styles to the h1, p, and a elements */
+h1,
+p,
+a {
+    position: relative;
+    z-index: 2;
+}
+
+video {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+.jumbotron {
+    background-size: cover;
+    color: #086986;
+    padding: 150px 0;
+}
